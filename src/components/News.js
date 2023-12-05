@@ -167,7 +167,7 @@ const News = (props)=> {
         >
           <div className="container">
             <div className="row my-3">
-              {articles.map((element, key) => {
+              {articles?.length > 0 && articles.map((element, key) => {
                 return (
                   <div className="col-md-4" key={key}>
                     <NewsItem
